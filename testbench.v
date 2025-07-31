@@ -23,7 +23,7 @@ module tb_sync_fifo;
         .full(full)
     );
 
-    always #5 clk = ~clk; // 10 ns clock
+    always #5 clk = ~clk; 
 
     initial begin
         $display("Starting FIFO test with full/empty/corner checks");
